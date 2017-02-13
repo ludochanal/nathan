@@ -2,20 +2,18 @@
 var express = require('express'),
     fs      = require('fs'),
     app     = express(),
-    eps     = require('ejs'),
-    morgan  = require('morgan');
+    eps     = require('ejs')
 
 Object.assign=require('object-assign')
 
 app.engine('html', require('ejs').renderFile);
-app.use(morgan('combined'))
 
-var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8077,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 
 app.get('/', function (req, res) {
-    res.render('index.html', { l});
+    res.render('index.html', { });
 });
 
 // error handling
