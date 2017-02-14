@@ -1,21 +1,36 @@
 {
-  "name": "nodejs-ex",
-  "version": "0.0.1",
-  "description": "Node.js sample app for OpenShift 3",
-  "main": "server.js",
+  "name": "dematmandat",
+  "version": "1.0.0",
+  "description": "OpenShift Sample Application",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": "OpenShift <ramr@example.org> (http://www.openshift.com/)",
+  "homepage": "http://www.openshift.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-server"
+  },
+  "engines": {
+    "node": ">= 0.10.0",
+    "npm": ">= 1.0.0"
+  },
   "dependencies": {
-    "chai": "^3.5.0",
-    "chai-http": "^2.0.1",
-    "ejs": "^2.4.1",
-    "express": "^4.13.4",
-    "object-assign":"4.1.0"
+    "express": "~3.4.4", 
+    "xml2js": "~0.4.8"
   },
-  "engine": {
-    "node": "*",
-    "npm": "*"
-  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "private": true,
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Nathan"
+  "bugs": {
+    "url": "https://github.com/openshift/origin-server/issues"
+  },
+  "license": "ISC"
 }

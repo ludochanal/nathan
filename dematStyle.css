@@ -1,0 +1,115 @@
+body{
+	width: 650px;
+	font-family: Sosh-Medium,Arial,sans-serif;
+	margin:0 auto 0 auto;
+}
+
+.error {
+	font-size: 13px;
+	color: RED;
+	font-weight: bold;	
+}
+
+p{
+	font-size: 13px;
+	color: #7E7E7E;
+}
+.table p {
+    overflow: hidden;
+}
+
+.framed {
+	border: 1px solid #D2D2D2;
+	margin-bottom: 15px;
+}
+.title {
+	color: white;
+	border-bottom: 1px solid #00A1AB;
+	background-color: #00A1AB;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.content {
+	padding: 10px;
+}
+
+hr {
+	width: 90%;
+	color: #D8D8D8;
+}
+
+.table .label {
+    float: left;
+    text-align: right;
+    vertical-align: top;
+    width: 10em;
+    color: #00A1AB;
+}
+
+.table .value{
+    float: left;
+    margin-left: 2em;
+    vertical-align: top;
+    /*width: 18em;*/
+    width: 14em;
+}
+
+.eSign {
+    overflow: hidden;
+}
+
+.eSign .info {
+    float: left;
+    text-align: right;
+    vertical-align: top;
+    width: 22em;
+}
+
+.eSign .button{
+	float: left;
+	margin-left: 2em;
+	vertical-align: top;
+	width: 235px;
+}
+
+
+a{
+	color: #000000;
+	text-align: center;
+}
+
+.bigBlackButton {
+	background-color:#E3295E;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #E3295E;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-align: center;
+}
+.bigBlackButton:active {
+	position:relative;
+	top:1px;
+}
+
+input.ng-invalid {
+	border-right-color: red;
+    border-left-color: red;
+}
+
+.spinner {
+	width: 20px;
+	margin-left: 10px;
+}
+
+.center-contents {
+  text-align: center;
+}
