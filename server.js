@@ -22,14 +22,14 @@ var SampleApp = function() {
      */
     self.setupVariables = function() {
         //  Set the environment variables we need.
-        self.ipaddress = process.env.NLEGOFF_PORT_8080_TCP_ADDR;
-        self.port      = process.env.NLEGOFF_PORT_8080_TCP_PORT || 8080;
+        self.ipaddress = "localhost";
+        self.port      = 8080;
 
         if (typeof self.ipaddress === "undefined") {
             //  Log errors on OpenShift but continue w/ 127.0.0.1 - this
             //  allows us to run/test the app locally.
             console.warn('No NLEGOFF_PORT_8080_TCP_ADDR var, using 127.0.0.1');
-            self.ipaddress = "127.0.0.1";
+            self.ipaddress = "localhost";
         };
     };
 
